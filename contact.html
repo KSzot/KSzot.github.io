@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="utf-8" />
+    <title>HortiCalc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+      <div class="navigation__image">
+        <a href="/index.html" class="navigation__image--logo"></a>
+      </div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="/index.html" class="navigation__link">Strona główna</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/aboutUs.html" class="navigation__link">O Nas</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/offer.html" class="navigation__link">Oferta</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/price.html" class="navigation__link">Cennik</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Referencje</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/contact.html" class="navigation__link">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main class="page-content">
+      <div class="bar-cut">
+        <h2 class="header-text">Kontakt</h2>
+      </div>
+      <section class="contact">
+        <div class="contact__form">
+          <h3 class='contact__form--header-pirmary'>Formularz kontaktowy</h3>
+          <p class="contact__form--header-secondary">Masz pytanie? Napisz do Nas</p>
+          <form class="form" action="" method="post">
+            <div class="form__section">
+              <div class="form__section--field">
+                <input type="text" name="sendername" id="sendername" class="form-input" placeholder="Twoje imię i nazwisko">
+                <span class="form-icon"><i class="fa fa-user"></i></span>
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__section--field">
+                <input type="email" name="emailaddress" id="emailaddress" class="form-input" placeholder="Email">
+                <span class="form-icon"><i class="fa fa-envelope"></i></span>
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__section--message">
+                <input type="tel" name="telephone" id="telephone" class="form-input" placeholder="Telefon">
+                <span class="form-icon"><i class="fa fa-phone-square"></i></span>
+              </div>
+            </div>
+            <div class="form__section">
+              <div class="form__section--field">
+                <textarea name="message" id="message" class="form-textarea" placeholder="Treść wiadomości"></textarea>
+                <span class="form-icon"><i class="fa fa-comments"></i></span>
+              </div>
+            </div>
+            <!-- <div class="form__section"> -->
+              <button type="submit" class="trial-btn trial-green">Wyślij</button>
+            <!-- </div> -->
+          </form>
+        </div>
+        <div class="contact__info">
+          <h4 class="contact__info--header-primary">Nasze dane</h4>
+        </div>
+      </section>
+    </main>
+    <!-- <header class="header">
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Innowacyjny system</span>
+          <span class="heading-primary--sub">zarządzania gospodarstwem</span>
+        </h1>
+
+        <a href="" class="btn btn--white btn--animated">Wypróbuj</a>
+      </div>
+    </header> -->
+    <footer class="footer-contact">
+      <div class="contact">
+        <div class="contact-boxfirst">
+          <div class="contact-boxfirst--image">
+            <a href="/index.html" class="contact-boxfirst--image-logo"></a>
+          </div>
+          <div class="contact-boxfirst--weather">
+            <div class="weather__header">
+              <h3 id="weather-name">Warszawa</h3>
+              <img id='weather-img' src='#' alt="Obrazek"></img>
+            </div>
+            <div class="weather__box">
+              <div class="weather__box--element"><p>Temperatura: <span id='temperatue'>36C °C</span></p></div>
+              <div class="weather__box--element"><p>Predkość wiatru: <span id='wind-speed'>15 m/s</span></p></div>
+            </div>
+            <div class="weather__box">
+              <div class="weather__box--element"><p>Ciśnienie: <span id='pressure'>1013hPa</span></p></div>
+              <div class="weather__box--element"><p>Wilgotność powietrza: <span id='humidity'>88%</span></p></div>
+            </div>
+            <div class="weather__button">
+              <button class="btn btn--white btn--animated btn-footer" id="btnChangeWeather"
+              >Zmień miasto</button
+            >
+            </div>
+          </div>
+          <div class="contact-boxfirst--adress">
+            <h4 class="header-footer">Kontakt:</h4>
+            <p>Tel: 605 405 302</p>
+            <p>Email: test@test.com</p>
+          </div>
+          <!-- <div></div> -->
+        </div>
+        <div class="contact-boxsecond">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-whatsapp-square"></i>
+        </div>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal__content">
+        <form>
+        <div class="modal__content--header">
+          <h4>Wprowadź nazwę miasta</h4>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal__content--input">
+           <input type="text" id="Wvalue" name="Wvalue" required>
+        </div>
+        <div class="modal__content--button">
+          <button class="btn btn--green btn-footer" id="btnSave" type="submit">Zapisz</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  <script src="contact.bundle.js"></script></body>
+</html>
