@@ -48,22 +48,23 @@
         <div class="contacts__form">
           <h3 class='contacts__form--header-pirmary'>Formularz kontaktowy</h3>
           <p class="contacts__form--header-secondary">Masz pytanie? Napisz do Nas</p>
+          <p class="contacts__form--message">Wiadomość wysłana poprawnie</p>
           <form class="form" action="email.php" method="post">
             <div class="form__section">
               <div class="form__section--field">
-                <input type="text" name="sendername" id="sendername" class="form-input" placeholder="Twoje imię i nazwisko">
+                <input type="text" name="sendername" id="sendername" class="form-input" placeholder="Twoje imię i nazwisko" required>
                 <span class="form-icon"><i class="fa fa-user"></i></span>
               </div>
             </div>
             <div class="form__section">
               <div class="form__section--field">
-                <input type="email" name="emailaddress" id="emailaddress" class="form-input" placeholder="Email">
+                <input type="email" name="emailaddress" id="emailaddress" class="form-input" placeholder="Email" required>
                 <span class="form-icon"><i class="fa fa-envelope"></i></span>
               </div>
             </div>
             <div class="form__section">
               <div class="form__section--message">
-                <input type="tel" name="telephone" id="telephone" class="form-input" placeholder="Telefon">
+                <input type="tel" name="telephone" id="telephone" class="form-input" placeholder="Telefon" required>
                 <span class="form-icon"><i class="fa fa-phone-square"></i></span>
               </div>
             </div>
